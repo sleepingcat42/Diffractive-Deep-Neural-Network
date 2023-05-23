@@ -49,5 +49,10 @@ onn, train_losses, train_accies, val_losses, val_accies, I_val, labels_val =\
                 train_loader,val_loader, 
                 model_save_path, epoch_num)    
 ```
+### Result
+Run onn_train.py. A three-layer D$^2$NN for MNIST data classification was trained. The results are shown as follow. The accuracy is about 90%.
+![](fig/Figure_1.png)
+![](fig/Figure_2.png)
+![](fig/Figure_3.png)
 ## Reference
 - Lin, Xing, et al. "All-optical machine learning using diffractive deep neural networks." Science 361.6406 (2018): 1004-1008.
