@@ -444,3 +444,13 @@ epoch 21 32, train loss: -0.783663,train accuracy:  0.885498
 validation loss:-0.784500, validation accuracy: 0.880859
 epoch 22 32, train loss: -0.787335,train accuracy:  0.887939
 validation loss:-0.788221, validation accuracy: 0.882812
+epoch 23 32, train loss: -0.790963,train accuracy:  0.889893
+validation loss:-0.790958, validation accuracy: 0.878906
+epoch 24 32, train loss: -0.793871,train accuracy:  0.889404
+validation loss:-0.793569, validation accuracy: 0.890625
+epoch 25 32, train loss: -0.796326,train accuracy:  0.891113
+validation loss:-0.796474, validation accuracy: 0.884766
+epoch 26 32, train loss: -0.798998,train accuracy:  0.894043
+validation loss:-0.797629, validation accuracy: 0.882812
+epoch 27 32, train loss: -0.801201,train accuracy:  0.893311
+validation loss:-0.800195, validation accuracy: 0.880859
