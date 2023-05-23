@@ -133,7 +133,7 @@ if __name__ == '__main__':
     ################################ train ####################################
     onn = Onn(M, L, lambda0, z).to(device)
     onn = onn.to(device)
-    epoch_num = 50
+    epoch_num = 1
     optimizer = optim.Adam(onn.parameters(), lr=1e-2)
     criterion = npcc_loss
     
@@ -148,7 +148,7 @@ if __name__ == '__main__':
     print(f'runing time: {end_time - start_time: 5f}s')
     
     ########################### show results ##################################    
-    epochs = [k for k in range(1,epoch_num+2)] 
+    epochs = [k for k in range(1,epoch_num+1)] 
     plt.figure(dpi = 300, figsize=(12,4))
     plt.subplot(121)
     plt.plot(epochs, train_losses, '-o')
@@ -163,12 +163,12 @@ if __name__ == '__main__':
     plt.ylabel('Accuracy')
     plt.legend(['train','validation'])
     plt.show()
+    
     plt.figure(dpi = 300, figsize=(8, 8))
     b = I_val.cpu().data.numpy()
-    
     for k in range(9):
         plt.subplot(3,3, k+1)
-        plt.imshow(b[k,:].squeeze(0),cmap='gray')
+        plt.imshow(b[k,:].squeeze(0)[64:256-64, 64:256-64],cmap='gray')
         plt.title('True Label: '+str(labels_val[k].cpu().numpy()))
         plt.axis('off')
     plt.show()
