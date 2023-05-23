@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 24 16:30:08 2022
+Created on Tue May 23 18:41:18 2023
 
-@author: pc
+@author: sleepingcat
+github: https://github.com/sleepingcat42
+e-mail: sleepingcat@aliyun.com
 """
 
 import torch
@@ -14,6 +16,9 @@ from torch.fft import fft2, fftshift, ifft2, ifftshift
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 PI = torch.pi
 
+# M: sampling rate
+# L: Length of the network
+# lambda0: wavelength
 
 class DiffLayer(nn.Module):
     def __init__(self, M, L, lambda0, z):

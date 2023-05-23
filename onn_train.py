@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 27 16:29:29 2022
+Created on Tue May 23 18:41:18 2023
 
-@author: chen
+@author: sleepingcat
+github: https://github.com/sleepingcat42
+e-mail: sleepingcat@aliyun.com
 """
 
 import torch
@@ -133,7 +135,7 @@ if __name__ == '__main__':
     ################################ train ####################################
     onn = Onn(M, L, lambda0, z).to(device)
     onn = onn.to(device)
-    epoch_num = 1
+    epoch_num = 50
     optimizer = optim.Adam(onn.parameters(), lr=1e-2)
     criterion = npcc_loss
     

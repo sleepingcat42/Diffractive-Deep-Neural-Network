@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 27 17:05:42 2022
+Created on Tue May 23 18:41:18 2023
 
-@author: Chen
+@author: sleepingcat
+github: https://github.com/sleepingcat42
+e-mail: sleepingcat@aliyun.com
 """
 
 import torch
